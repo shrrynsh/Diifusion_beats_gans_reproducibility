@@ -1,0 +1,8 @@
+( Activations for Sample Batch calc on 5000 samples)
+ImageNet 64x64 (Guideed)   IS=92.73725891113281,FID=10.214319101633976,sFID= 30.49688084929585,Precision=0.8352,Recall= 0.6364
+( Activations for Sample Batch calc on 5000 samples)
+ImageNet 128x128 (Guided)  IS=152.39414978027344,FID=12.71138488767707,sFID=35.00618477391572,Precision= 0.7816,Recall= 0.6757
+( Activations for Sample Batch calc on 5000 samples)
+ImageNet 256x256  (Guided) IS=197.10643005371094,FID=11.775254063560851,sFID=34.74492340803056,Precision=0.8154,Recall=0.6698
+(Activation for Sample Batch calc on 13000 samples)
+ImageNet 512x512 (Guided) IS=161.27464294433594,FID=10.427627992057637,sFID=18.48002510272397,Precision= 0.8321538461538461,Recall=0.548
