@@ -31,11 +31,11 @@ Below are example samples generated at different resolutions. Five samples from 
 ![256x256 sample 5](samples/256x256_guided/sample_0014_256x256_guided.png)  
 
 ### ImageNet 512×512  
-![512x512 sample 1](samples/512x512_guided/sample_0002_512x512.png)  
-![512x512 sample 2](samples/512x512_guided/sample_0008_512x512.png)  
-![512x512 sample 3](samples/512x512_guided/sample_0015_512x512.png)  
-![512x512 sample 4](samples/512x512_guided/sample_0006_512x512.png)  
-![512x512 sample 5](samples/512x512_guided/sample_0016_512x512.png)  
+![512x512 sample 1](samples/512x512_guided/sample_0002_512x512_guided.png)  
+![512x512 sample 2](samples/512x512_guided/sample_0008_512x512_guided.png)  
+![512x512 sample 3](samples/512x512_guided/sample_0015_512x512_guided.png)  
+![512x512 sample 4](samples/512x512_guided/sample_0006_512x512_guided.png)  
+![512x512 sample 5](samples/512x512_guided/sample_0016_512x512_guided.png)  
 
 ---
 
