@@ -10,7 +10,7 @@ def save_npz_images(
     random_pick=False,
     seed=0
 ):
-    data = np.load(npz_path, mmap_mode="r")  # don't load everything
+    data = np.load(npz_path, mmap_mode="r")  
     if key is None:
         key = data.files[0]
     arr = data[key]
@@ -22,7 +22,7 @@ def save_npz_images(
     N = arr.shape[0]
     num = min(num_to_save, N)
 
-    # pick indices
+  
     idx = np.arange(N)
     if random_pick:
         rng = np.random.default_rng(seed)
@@ -32,11 +32,11 @@ def save_npz_images(
     os.makedirs(out_dir, exist_ok=True)
 
     for j, i in enumerate(idx):
-        img = arr[i]  # this is just one sample, shape (512,512,3), dtype=uint8
+        img = arr[i]  
 
-        # If uint8 0–255, we can save directly
+        
         if img.dtype != np.uint8:
-            # normalize if needed
+        
             a = img.astype(np.float32)
             vmin, vmax = a.min(), a.max()
             if vmin >= 0 and vmax <= 1.05:
@@ -46,7 +46,6 @@ def save_npz_images(
             else:
                 img = np.clip(a, 0, 255).astype(np.uint8)
 
-        # choose mode
         if img.ndim == 2:
             mode = "L"
         elif img.shape[-1] == 3:
