@@ -59,8 +59,6 @@ Below are example samples generated at different resolutions.
 
 ## Challenges and Limitations  
 
-While reproducing the results, several challenges were encountered:  
-
 - **Compute limitations**: Due to limited computation resources available sampling across different resolution took longer time. Also several important experiments and results mentioned in the paper could not be reproduced due to limited compute. 
 - **Sample size differences**: Due to limited compute, evaluations were performed on small batches (5000-13000) whereas authors of the paper used 50000 samples for evalutation due to this reproduced results differ from those reported in paper.   
 
