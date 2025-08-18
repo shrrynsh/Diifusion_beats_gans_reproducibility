@@ -1,14 +1,18 @@
 # Reproducing *Diffusion Beats GANs on Image Synthesis*  
 
 ## Introduction  
-This repository contains my attempt at reproducing the results from the paper *Diffusion Beats GANs on Image Synthesis*. I implemented the guided diffusion model across multiple resolutions (64×64, 128×128, 256×256, 512×512) and evaluated the generated samples. The goal was to assess how closely the reproduced results align with the scores reported in the paper.  
+This repository contains my attempt at reproducing the results from the paper [*Diffusion Beats GANs on Image Synthesis*](https://arxiv.org/abs/2105.05233) which introduced improved diffusion architecture and classifier guidance. I implemented the guided diffusion model across multiple resolutions (64×64, 128×128, 256×256, 512×512) and evaluated the generated samples. 
+
+---
+
+## My Approach
+Since this paper was very compute expensive I decided to load pretrained weights of both classifiers and ADMs (Ablated Diffusion Models) across different resolutions (64x64,128x128,256x256,512x512). I cloned the official [*OpenAI codebase*](https://github.com/openai/guided-diffusion?tab=readme-ov-file) for the paper and used it fot implementation.Sampling across different resolutions took varied time from 4 to 8 hrs. Due to limited computation different metrics (FID,IS,sFID,Precision and Recall) were calcualted across 5000-13000 generated samples unlike the official implementation which used 50000 samples for evaluation.
 
 ---
 
 ## Sample Images  
 
-Below are example samples generated at different resolutions. Five samples from each resolution are shown for visualization.  
-
+Below are example samples generated at different resolutions. 
  
 
 ### 64×64  
@@ -57,8 +61,7 @@ Below are example samples generated at different resolutions. Five samples from 
 
 While reproducing the results, several challenges were encountered:  
 
-- **Compute limitations**: Running large-scale experiments on full ImageNet with sufficient samples was not feasible. The original paper benefits from far greater computational resources, which directly impacts FID and other evaluation scores.  
-- **Sample size differences**: Due to compute constraints, evaluation was performed on smaller batches (5,000–13,000 samples) compared to the paper’s full-scale evaluation. This introduces variability in the reported metrics.  
-- **Training stability**: Long training runs are sensitive to hyperparameters and infrastructure interruptions, which occasionally led to divergence or incomplete runs.  
+- **Compute limitations**: Due to limited computation resources available sampling across different resolution took longer time. Also several important experiments and results mentioned in the paper could not be reproduced due to limited compute. 
+- **Sample size differences**: Due to limited compute, evaluations were performed on small batches (5000-13000) whereas authors of the paper used 50000 samples for evalutation due to this reproduced results differ from those reported in paper.   
 
-As a result, my reproduced results differ from those in the paper. However, the overall trends remain consistent: precision generally increases with higher resolutions, while recall decreases.  
+
