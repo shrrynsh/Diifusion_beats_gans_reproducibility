@@ -10,32 +10,32 @@ This repository contains my attempt at reproducing the results from the paper *D
 Below are example samples generated at different resolutions. Five samples from each resolution are shown for visualization.  
 
 ### ImageNet 64×64  
-![64x64 sample 1](samples/64/sample1.png)  
-![64x64 sample 2](samples/64/sample2.png)  
-![64x64 sample 3](samples/64/sample3.png)  
-![64x64 sample 4](samples/64/sample4.png)  
-![64x64 sample 5](samples/64/sample5.png)  
+![64x64 sample 1](samples\64x64_guided\sample_0001_64x64_guided.png)  
+![64x64 sample 2](samples\64x64_guided\sample_0002_64x64_guided.png)  
+![64x64 sample 3](samples\64x64_guided\sample_0006_64x64_guided.png)  
+![64x64 sample 4](samples\64x64_guided\sample_00018_64x64_guided.png)  
+![64x64 sample 5](samples\64x64_guided\sample_00021_64x64_guided.png)  
 
 ### ImageNet 128×128  
-![128x128 sample 1](samples/128/sample1.png)  
-![128x128 sample 2](samples/128/sample2.png)  
-![128x128 sample 3](samples/128/sample3.png)  
-![128x128 sample 4](samples/128/sample4.png)  
-![128x128 sample 5](samples/128/sample5.png)  
+![128x128 sample 1](samples\128x128_guided\sample_0003_128x128_guided.png)  
+![128x128 sample 2](samples\128x128_guided\sample_00019_128x128_guided.png)
+![128x128 sample 3](samples\128x128_guided\sample_00026_128x128_guided.png)  
+![128x128 sample 4](samples\128x128_guided\sample_00012_128x128_guided.png)  
+![128x128 sample 5](samples\128x128_guided\sample_00021_128x128_guided.png)  
 
 ### ImageNet 256×256  
-![256x256 sample 1](samples/256/sample1.png)  
-![256x256 sample 2](samples/256/sample2.png)  
-![256x256 sample 3](samples/256/sample3.png)  
-![256x256 sample 4](samples/256/sample4.png)  
-![256x256 sample 5](samples/256/sample5.png)  
+![256x256 sample 1](samples\256x256_guided\sample_0002_256x256_guided.png)  
+![256x256 sample 2](samples\256x256_guided\sample_00010_256x256_guided.png)  
+![256x256 sample 3](samples\256x256_guided\sample_0009_256x256_guided.png)  
+![256x256 sample 4](samples\256x256_guided\sample_0007_256x256_guided.png)  
+![256x256 sample 5](samples\256x256_guided\sample_00014_256x256_guided.png)  
 
 ### ImageNet 512×512  
-![512x512 sample 1](samples/512/sample1.png)  
-![512x512 sample 2](samples/512/sample2.png)  
-![512x512 sample 3](samples/512/sample3.png)  
-![512x512 sample 4](samples/512/sample4.png)  
-![512x512 sample 5](samples/512/sample5.png)  
+![512x512 sample 1](samples\512x512_guided\sample_0002_512x512.png)  
+![512x512 sample 2](samples\512x512_guided\sample_0008_512x512.png)  
+![512x512 sample 3](samples\512x512_guided\sample_00015_512x512.png)  
+![512x512 sample 4](samples\512x512_guided\sample_0006_512x512.png)  
+![512x512 sample 5](samples\512x512_guided\sample_00016_512x512.png)  
 
 ---
 
